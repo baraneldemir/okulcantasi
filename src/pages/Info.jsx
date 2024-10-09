@@ -74,8 +74,8 @@ export default function Start() {
 
   return (
     <div
-      style={{ backgroundAttachment: 'fixed', backgroundImage: `url(${arkaplan})` }}
-      className="relative flex flex-col items-center justify-center h-screen px-6 bg-cover bg-slate-300 lg:px-20"
+      style={{ backgroundImage: `url(${arkaplan})` }}
+      className="relative flex flex-col items-center justify-center h-screen px-6 bg-fixed bg-cover bg-slate-300 lg:px-20"
     >
       {/* Form Wrapper */}
       <form

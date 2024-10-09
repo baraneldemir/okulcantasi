@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 export default function How() {
   return (
     <div 
-      style={{ backgroundAttachment: 'fixed', backgroundImage: `url(${arkaplan})` }} 
-      className="relative z-10 flex flex-col items-center px-6 pb-20 bg-cover bg-slate-300"
+      style={{ backgroundImage: `url(${arkaplan})` }} 
+      className="relative z-10 flex flex-col items-center px-6 pb-20 bg-fixed bg-cover bg-slate-300"
     >
       <div className="flex flex-col items-center min-h-screen p-6 ">
         <h1 className="mb-6 text-3xl text-white">Nasil Calisiyoruz</h1>

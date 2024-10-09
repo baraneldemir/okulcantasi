@@ -4,8 +4,8 @@ import arkaplan from '../images/schoolbg.jpg'
 export default function Footer() {
   return (
     <div 
-      style={{ backgroundAttachment: 'fixed', backgroundImage: `url(${arkaplan})` }} 
-      className="relative flex flex-col items-center bg-cover bg-slate-300 -z-20"
+      style={{ backgroundImage: `url(${arkaplan})` }} 
+      className="relative flex flex-col items-center bg-fixed bg-cover bg-slate-300 -z-20"
     >
     <footer className="py-6 text-white ">
       <div className="container mx-auto text-center">
