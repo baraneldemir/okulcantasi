@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import arkaplan from '../images/schoolbg.jpg';
+// import arkaplan from '../images/schoolbg.jpg';
 import abc from '../images/abc.png';
 import aka from '../images/aka.png';
 import arel from '../images/arel.png';
@@ -245,7 +245,7 @@ export default function Start() {
   return (
     <div
       // style={{  backgroundImage: `url(${arkaplan})` }}
-      // className="relative flex flex-col items-center justify-center h-screen px-6 bg-cover before:fixed bg-slate-300 lg:px-20"
+      className="relative flex flex-col items-center justify-center h-screen px-6 lg:px-20"
     >
       <form
         onSubmit={handleSubmit}

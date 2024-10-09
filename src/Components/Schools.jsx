@@ -4,7 +4,7 @@ import aka from '../images/aka.png';
 import arel from '../images/arel.png';
 import bahcesehir from '../images/bahcesehir.png';
 import sinav from '../images/sinav.png';
-import arkaplan from '../images/schoolbg.jpg';
+// import arkaplan from '../images/schoolbg.jpg';
 import How from './How';
 
 export default function Schools() {
@@ -12,7 +12,7 @@ export default function Schools() {
     <>
       <div 
         // style={{ backgroundImage: `url(${arkaplan})` }} 
-        // className="relative z-20 flex flex-col items-center px-6 pb-20 bg-cover before:fixed bg-slate-300 lg:px-20"
+        className="relative z-20 flex flex-col items-center px-6 pb-20 lg:px-20"
       >
         <div className='my-4 text-2xl text-white'>Çalıştığımız Okullar</div>
 
