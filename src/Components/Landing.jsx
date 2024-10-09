@@ -10,7 +10,8 @@ import Footer from './Footer'
 export default function Landing() {
     return (
         <>
-        <div style={{ backgroundImage: `url(${arkaplan})` }} className="relative flex flex-col items-center h-screen px-6 bg-fixed before:fixed lg:flex-row bg-slate-300 lg:px-20">
+        <div>
+        {/* <div style={{ backgroundImage: `url(${arkaplan})` }} className="relative flex flex-col items-center h-screen px-6 bg-fixed before:fixed lg:flex-row bg-slate-300 lg:px-20"> */}
             <div
                     class="absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-black bg-fixed opacity-50 "></div>
             {/* Left: Hero Section */}

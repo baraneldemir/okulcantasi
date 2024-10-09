@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div 
       style={{ backgroundImage: `url(${arkaplan})` }} 
-      className="relative flex flex-col items-center bg-fixed bg-cover bg-slate-300 -z-20"
+      className="relative flex flex-col items-center bg-slate-300 -z-20"
     >
     <footer className="py-6 text-white ">
       <div className="container mx-auto text-center">

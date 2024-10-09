@@ -244,8 +244,8 @@ export default function Start() {
 
   return (
     <div
-      style={{  backgroundImage: `url(${arkaplan})` }}
-      className="relative flex flex-col items-center justify-center h-screen px-6 bg-cover before:fixed bg-slate-300 lg:px-20"
+      // style={{  backgroundImage: `url(${arkaplan})` }}
+      // className="relative flex flex-col items-center justify-center h-screen px-6 bg-cover before:fixed bg-slate-300 lg:px-20"
     >
       <form
         onSubmit={handleSubmit}

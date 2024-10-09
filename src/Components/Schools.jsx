@@ -11,8 +11,8 @@ export default function Schools() {
   return (
     <>
       <div 
-        style={{ backgroundImage: `url(${arkaplan})` }} 
-        className="relative z-20 flex flex-col items-center px-6 pb-20 bg-cover before:fixed bg-slate-300 lg:px-20"
+        // style={{ backgroundImage: `url(${arkaplan})` }} 
+        // className="relative z-20 flex flex-col items-center px-6 pb-20 bg-cover before:fixed bg-slate-300 lg:px-20"
       >
         <div className='my-4 text-2xl text-white'>Çalıştığımız Okullar</div>
 
