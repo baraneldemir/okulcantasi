@@ -243,7 +243,7 @@ export default function Start() {
         const items = itemsData[selectedSchool][schoolYear];
         const schoolImage = schools.find(school => school.name === selectedSchool)?.imgSrc; // Get the image src
         navigate('/paket', { state: { selectedSchool, schoolYear, items, schoolImage  } });
-      }, 1000); // Simulate a short delay before navigating
+      }, 5000); // Simulate a short delay before navigating
     }
   };
 
