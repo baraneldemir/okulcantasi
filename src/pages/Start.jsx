@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-// import arkaplan from '../images/schoolbg.jpg';
 import abc from '../images/abc.png';
 import aka from '../images/aka.png';
 import arel from '../images/arel.png';
 import bahcesehir from '../images/bahcesehir.png';
 import sinav from '../images/sinav.png';
 import { useNavigate } from 'react-router-dom';
-import '../App.css'
+import '../App.css';
+import itemsData from '../data/data.json'; // Import the JSON data
 
 export default function Start() {
   const [isVisible, setIsVisible] = useState(false);
@@ -30,161 +30,6 @@ export default function Start() {
     { name: 'Bahcesehir Koleji', imgSrc: bahcesehir },
     { name: 'Sinav Koleji', imgSrc: sinav },
   ];
-
-  // Items data structure
-  const itemsData = {
-    'ABC Koleji': {
-    '1': [
-      { name: '1.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '1.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '1.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '1.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '1.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '2': [
-      { name: '2.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '2.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '2.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '2.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '2.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '3': [
-      { name: '3.sinif Kitaplari', description: 'Türkçe ve matematik... kitaplar' },
-      { name: '3.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '3.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '3.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '3.sinif suluk ve yemek çantası', description: 'Superman suluk ve çanta' },
-    ],
-    '4': [
-      { name: '4.sinif Kitaplari', description: 'Fen bilimleri ve matematik... kitaplar' },
-      { name: '4.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '4.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '4.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '4.sinif suluk ve yemek çantası', description: 'Batman suluk ve çanta' },
-    ],
-  },
-  'Aka Koleji': {
-    '1': [
-      { name: '1.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '1.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '1.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '1.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '1.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '2': [
-      { name: '2.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: 'cetvel', description: 'Pergel ve birkaç şey dahil' },
-      { name: 'kalem', description: 'Mavi ve siyah kalemler' },
-      { name: 'polo tshirt', description: 'Yazlık tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '3': [
-      { name: '3.sinif Kitaplari', description: 'Fen bilimleri ve matematik... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Küçük hesap makinesi' },
-      { name: 'kalem', description: 'Biyoloji kitabı' },
-      { name: 'polo tshirt', description: 'Spor tişörtü' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '4': [
-      { name: '4.sinif Kitaplari', description: 'Coğrafya ve tarihLorem kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Büyük hesap makinesi' },
-      { name: 'kalem', description: 'İnce kalemler' },
-      { name: 'polo tshirt', description: 'Çizgili tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-  },
-  'Arel Koleji': {
-    '1': [
-      { name: '1.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '1.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '1.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '1.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '1.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '2': [
-      { name: '2.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: 'cetvel', description: 'Pergel ve birkaç şey dahil' },
-      { name: 'kalem', description: 'Mavi ve siyah kalemler' },
-      { name: 'polo tshirt', description: 'Yazlık tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '3': [
-      { name: '3.sinif Kitaplari', description: 'Fen bilimleri ve matematik... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Küçük hesap makinesi' },
-      { name: 'kalem', description: 'Biyoloji kitabı' },
-      { name: 'polo tshirt', description: 'Spor tişörtü' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '4': [
-      { name: '4.sinif Kitaplari', description: 'Coğrafya ve tarih... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Büyük hesap makinesi' },
-      { name: 'kalem', description: 'İnce kalemler' },
-      { name: 'polo tshirt', description: 'Çizgili tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-  },
-  'Bahcesehir Koleji': {
-    '1': [
-      { name: '1.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '1.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '1.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '1.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '1.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '2': [
-      { name: '2.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: 'cetvel', description: 'Pergel ve birkaç şey dahil' },
-      { name: 'kalem', description: 'Mavi ve siyah kalemler' },
-      { name: 'polo tshirt', description: 'Yazlık tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '3': [
-      { name: '3.sinif Kitaplari', description: 'Fen bilimleri ve matematik... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Küçük hesap makinesi' },
-      { name: 'kalem', description: 'Biyoloji kitabı' },
-      { name: 'polo tshirt', description: 'Spor tişörtü' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '4': [
-      { name: '4.sinif Kitaplari', description: 'Coğrafya ve tarih... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Büyük hesap makinesi' },
-      { name: 'kalem', description: 'İnce kalemler' },
-      { name: 'polo tshirt', description: 'Çizgili tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    },
-  'Sinav Koleji': {
-    '1': [
-      { name: '1.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: '1.sinif Defterleri 6 Tane cizgili', description: 'Lorem marka cizgili defter' },
-      { name: '1.sinif Defterleri 6 Tane kareli', description: 'Lorem marka kareli defter' },
-      { name: '1.sinif Renkli Boyama kitaplari', description: 'Boyama kitabı' },
-      { name: '1.sinif suluk ve yemek çantası', description: 'Spiderman suluk ve çanta' },
-    ],
-    '2': [
-      { name: '2.sinif Kitaplari', description: 'İngilizce ve matematik... kitaplar' },
-      { name: 'cetvel', description: 'Pergel ve birkaç şey dahil' },
-      { name: 'kalem', description: 'Mavi ve siyah kalemler' },
-      { name: 'polo tshirt', description: 'Yazlık tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '3': [
-      { name: '3.sinif Kitaplari', description: 'Fen bilimleri ve matematik... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Küçük hesap makinesi' },
-      { name: 'kalem', description: 'Biyoloji kitabı' },
-      { name: 'polo tshirt', description: 'Spor tişörtü' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    '4': [
-      { name: '4.sinif Kitaplari', description: 'Coğrafya ve tarih... kitaplar' },
-      { name: 'ti hesap makinesi', description: 'Büyük hesap makinesi' },
-      { name: 'kalem', description: 'İnce kalemler' },
-      { name: 'polo tshirt', description: 'Çizgili tişört' },
-      { name: 'yelek', description: 'Kışlık yelek' },
-    ],
-    }
-    
-  };
 
   useEffect(() => {
     setIsVisible(true); // Trigger the card appearance animation when the component mounts
@@ -240,32 +85,28 @@ export default function Start() {
     } else {
       setIsLoading(true);
       setTimeout(() => {
-        const items = itemsData[selectedSchool][schoolYear];
-        const schoolImage = schools.find(school => school.name === selectedSchool)?.imgSrc; // Get the image src
-        navigate('/paket', { state: { selectedSchool, schoolYear, items, schoolImage  } });
-      }, 5000); // Simulate a short delay before navigating
+        const items = itemsData[selectedSchool]?.[schoolYear] || []; // Fetch specific items based on school and year
+        const schoolImage = schools.find((school) => school.name === selectedSchool)?.imgSrc; // Get the image src
+        navigate('/paket', { state: { selectedSchool, schoolYear, items, schoolImage, } });
+      }, 3000); // Simulate a short delay before navigating
     }
   };
 
   return (
-    <div
-      // style={{  backgroundImage: `url(${arkaplan})` }}
-      className="relative flex flex-col items-center justify-center h-screen px-6 lg:px-20"
-      
-    >
+    <div className="relative flex flex-col items-center justify-center h-screen px-6 lg:px-20">
       {isLoading && (
-  <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
-    <div className="relative w-16 h-16 animate-rotate360">
-      {/* Apple Body */}
-      <div className="relative w-16 h-16 bg-red-500 border-4 border-red-600 rounded-full"></div>
-      {/* Apple Stem */}
-      <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 -translate-y-3 rounded-t-full left-1/2 bg-brown-500"></div>
-      {/* Apple Leaf */}
-      <div className="absolute top-0 left-2/3 transform -translate-x-1/2 -translate-y-3 w-4 h-8 bg-green-500 rounded-full rotate-[30deg]"></div>
-    </div>
-  </div>
-)}
-
+        <div className="absolute inset-0 z-50 flex flex-col items-center justify-center bg-gray-100 bg-opacity-0">
+          <div className="relative w-16 h-16 animate-rotate360">
+            {/* Apple Body */}
+            <div className="relative w-16 h-16 bg-red-500 border-4 border-red-600 rounded-full"></div>
+            {/* Apple Stem */}
+            <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 -translate-y-3 rounded-t-full left-1/2 bg-brown-500"></div>
+            {/* Apple Leaf */}
+            <div className="absolute top-0 left-2/3 transform -translate-x-1/2 -translate-y-3 w-4 h-8 bg-green-500 rounded-full rotate-[30deg]"></div>
+          </div>
+          <h1 className='relative px-1 text-center text-white bg-black bg-opacity-50 rounded-lg'>Urunleriniz yükleniyor...</h1>
+        </div>
+      )}
 
       <form
         onSubmit={handleSubmit}
@@ -348,21 +189,23 @@ export default function Start() {
             onChange={handleSchoolYearChange}
             className={`w-full p-3 border ${schoolYearError ? 'border-red-500' : 'border-gray-300'} rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500`}
           >
-            <option value="">Yıl seçin</option>
+            <option value="">Lütfen bir yıl seçin</option>
             <option value="1">1. Yıl</option>
             <option value="2">2. Yıl</option>
             <option value="3">3. Yıl</option>
             <option value="4">4. Yıl</option>
+            {/* Add more years as needed */}
           </select>
           {schoolYearError && <p className="mt-2 text-sm text-red-600">{schoolYearError}</p>}
         </div>
 
         {/* Error Message */}
-        {errorMessage && <p className="mb-4 text-sm text-red-600">{errorMessage}</p>}
+        {errorMessage && <p className="mt-4 text-sm text-red-600">{errorMessage}</p>}
 
+        {/* Submit Button */}
         <button
           type="submit"
-          className="w-full p-3 font-bold text-black bg-white border border-gray-300 rounded-lg t hover:bg-slate-800 hover:text-white "
+          className="w-full p-3 mt-4 text-white bg-blue-500 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500"
         >
           Devam Et
         </button>

@@ -1,8 +1,10 @@
 import React from 'react';
 // import arkaplan from '../images/schoolbg.jpg';
 import { Link } from 'react-router-dom';
-
+import '../App.css'
+import useAnimateOnScroll from '../hooks/AnimateOnScroll';
 export default function How() {
+    useAnimateOnScroll()
   return (
     <div 
     //   style={{ backgroundImage: `url(${arkaplan})` }} 
@@ -12,31 +14,31 @@ export default function How() {
         <h1 className="mb-6 text-3xl text-white">Nasil Calisiyoruz</h1>
         <div className="relative">
           {/* Başlangıç */}
-          <div className="p-4 mb-4 text-center bg-white border-2 border-green-800 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 border-green-800 rounded-lg notRightAnimated">
             <h2 className="font-semibold">1. Başlangıç</h2>
             <p className="text-sm">Ana sayfamıza giderek yolculuğunuza başlayın.</p>
           </div>
           
           {/* Seçim Sayfası */}
-          <div className="p-4 mb-4 text-center bg-white border-2 border-red-800 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 border-red-800 rounded-lg notLeftAnimated">
             <h2 className="font-semibold">2. Okul Seçimi</h2>
             <p className="text-sm">Mevcut paketleri görmek için okulunuzu seçin.</p>
           </div>
           
           {/* Yıl Seçim Sayfası */}
-          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg notRightAnimated">
             <h2 className="font-semibold">3. Yıl Seçimi</h2>
             <p className="text-sm">Görmek istediğiniz paketler için akademik yılı seçin.</p>
           </div>
           
           {/* Paket Sayfası */}
-          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg notLeftAnimated">
             <h2 className="font-semibold">4. Paket Sayfası</h2>
             <p className="text-sm">Okulunuz ve yılınız için mevcut paketleri görüntüleyin.</p>
           </div>
           
           {/* Ödeme Sayfası */}
-          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg notRightAnimated">
             <h2 className="font-semibold">5. Ödeme Sayfası</h2>
             <p className="text-sm">Seçimlerinizi gözden geçirin ve ödemeye geçin.</p>
           </div>

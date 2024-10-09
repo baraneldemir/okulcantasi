@@ -6,8 +6,10 @@ import React from 'react'
 import Schools from './Schools'
 // import Footer from './Footer'
 // import Start from '../pages/Start'
-
+import '../App.css'
+import useAnimateOnScroll from '../hooks/AnimateOnScroll'
 export default function Landing() {
+    useAnimateOnScroll()
     return (
         <>
         
@@ -19,10 +21,10 @@ export default function Landing() {
             {/* Left: Hero Section */}
             <div className="z-10 mt-10 mb-12 text-center lg:text-left lg:w-1/2 lg:mb-0">
             
-                <h1 className="mb-6 text-4xl font-bold text-white lg:text-5xl">
+                <h1 className="mb-6 text-4xl font-bold text-white lg:text-5xl notShrinkAnimated">
                     Yeni doneme hazir ol!
                 </h1>
-                <p className="mx-4 mb-6 text-sm text-white lg:text-lg lg:mx-0">
+                <p className="mx-4 mb-6 text-sm text-white lg:text-lg lg:mx-0 notLeftAnimated">
                     Proje kapsamında öğrenci ihtiyaçları eksiksiz olarak tek bir pakette temin edilmiş olur. En önemli avantajı ise veliler liste peşinde koşmazlar ve zamandan tasarruf sağlarlar. Ürün paketleri siparişinizi takiben 3 iş günü içerisinde (okul açılış haftası bu süre uzayabilir) kayıtlı teslimat adresinize ücretsiz olarak kargo ile teslim edilir. Kargo adresi Türkiye’nin herhangi bir yeri olabilir. 
     
                 </p>
@@ -33,7 +35,7 @@ export default function Landing() {
             </div>
 
             {/* Right: Solar System Animation */}
-            <div className="relative z-50 flex items-center justify-center w-full mb-20 lg:w-1/2 h-80 lg:h-auto">
+            <div className="relative z-50 flex items-center justify-center w-full mt-10 lg:w-1/2 h-80 lg:h-auto notShrinkAnimated">
                 <div className="relative flex items-center justify-center text-xl font-bold text-white bg-yellow-500 rounded-full shadow-2xl w-36 h-36"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     {/* Orbiting Planets */}
