@@ -41,7 +41,7 @@ module.exports = {
         },
       },
       animation: {
-        'orbit-mercury': 'orbitMercury 18s linear infinite',
+        'orbit-mercury': 'orbitMercury 4s linear infinite',
         'orbit-venus': 'orbitVenus 15s linear infinite',
         'orbit-earth': 'orbitEarth 8s linear infinite',
         'orbit-mars': 'orbitMars 10s linear infinite',

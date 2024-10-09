@@ -14,7 +14,7 @@ export default function Schools() {
         // style={{ backgroundImage: `url(${arkaplan})` }} 
         className="relative z-20 flex flex-col items-center px-6 pb-20 lg:px-20"
       >
-        <div className='my-4 text-2xl text-white'>Çalıştığımız Okullar</div>
+        <div className='my-4 mt-10 text-2xl text-white'>Çalıştığımız Okullar</div>
 
         {/* Image grid for schools */}
         <div className='flex flex-row flex-wrap justify-center gap-8 rounded-lg'>

@@ -26,14 +26,14 @@ export default function Landing() {
                     Proje kapsamında öğrenci ihtiyaçları eksiksiz olarak tek bir pakette temin edilmiş olur. En önemli avantajı ise veliler liste peşinde koşmazlar ve zamandan tasarruf sağlarlar. Ürün paketleri siparişinizi takiben 3 iş günü içerisinde (okul açılış haftası bu süre uzayabilir) kayıtlı teslimat adresinize ücretsiz olarak kargo ile teslim edilir. Kargo adresi Türkiye’nin herhangi bir yeri olabilir. 
     
                 </p>
-                <Link to='/start' className="px-6 py-3 mt-6 font-semibold text-black transition bg-white rounded-full hover:bg-black hover:text-white">
+                <Link to='/start' className="px-6 py-3 font-semibold text-black transition bg-white rounded-full hover:bg-slate-800 hover:text-white">
                     Siparis ver
                 </Link>
                 
             </div>
 
             {/* Right: Solar System Animation */}
-            <div className="relative flex items-center justify-center w-full lg:w-1/2 h-80 lg:h-auto">
+            <div className="relative z-50 flex items-center justify-center w-full mb-20 lg:w-1/2 h-80 lg:h-auto">
                 <div className="relative flex items-center justify-center text-xl font-bold text-white bg-yellow-500 rounded-full shadow-2xl w-36 h-36"></div>
                 <div className="absolute inset-0 flex items-center justify-center">
                     {/* Orbiting Planets */}
