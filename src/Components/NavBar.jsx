@@ -46,6 +46,22 @@ export default function NavBar() {
                     Okul Cantam
                 </Link>
 
+                {/* Center: Navigation Links for Larger Screens */}
+                <div className="hidden lg:flex lg:space-x-20">
+                    <Link to="/" className="relative block text-black transition duration-300">
+                        Hakkimizda
+                        <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
+                    </Link>
+                    <Link to="/okullarimiz" className="relative block text-black transition duration-300">
+                        Okullarimiz
+                        <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
+                    </Link>
+                    <Link to="/" className="relative block text-black transition duration-300">
+                        Bizimle iletisime gecin
+                        <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
+                    </Link>
+                </div>
+
                 {/* Empty div to ensure the center text stays in the center */}
                 <div className="hidden lg:block"></div>
             </div>
@@ -60,7 +76,7 @@ export default function NavBar() {
                                 className="relative block text-black transition duration-300"
                             >
                                 Hakkimizda
-                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span> {/* Green underline */}
+                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
                             </Link>
                         </li>
                         <li className="py-2 group">
@@ -69,7 +85,7 @@ export default function NavBar() {
                                 className="relative block text-black transition duration-300"
                             >
                                 Okullarimiz
-                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span> {/* Green underline */}
+                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
                             </Link>
                         </li>
                         <li className="py-2 group">
@@ -78,7 +94,7 @@ export default function NavBar() {
                                 className="relative block text-black transition duration-300"
                             >
                                 Bizimle iletisime gecin
-                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span> {/* Green underline */}
+                                <span className="absolute left-0 block w-0 h-1 transition-all duration-500 ease-in-out bg-green-800 rounded-lg -bottom-1 group-hover:w-full"></span>
                             </Link>
                         </li>
                     </ul>

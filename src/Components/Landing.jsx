@@ -4,7 +4,7 @@
 import { Link } from 'react-router-dom'
 import React from 'react'
 import Schools from './Schools'
-import Footer from './Footer'
+// import Footer from './Footer'
 // import Start from '../pages/Start'
 
 export default function Landing() {
@@ -49,7 +49,7 @@ export default function Landing() {
             </div>
         </div>
         <Schools/>
-        <Footer/>
+      
         
         </>
     )
