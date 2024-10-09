@@ -17,6 +17,7 @@ export default function Start() {
   const [studentNameError, setStudentNameError] = useState('');
   const [schoolYearError, setSchoolYearError] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -236,9 +237,12 @@ export default function Start() {
     if (!schoolNumber || !studentName || !schoolYear || !selectedSchool) {
       setErrorMessage('Lütfen ilerlemek için bilgileri doldurun.');
     } else {
-      const items = itemsData[selectedSchool][schoolYear];
-      const schoolImage = schools.find(school => school.name === selectedSchool)?.imgSrc; // Get the image src
-      navigate('/paket', { state: { selectedSchool, schoolYear, items, schoolImage  } });
+      setIsLoading(true);
+      setTimeout(() => {
+        const items = itemsData[selectedSchool][schoolYear];
+        const schoolImage = schools.find(school => school.name === selectedSchool)?.imgSrc; // Get the image src
+        navigate('/paket', { state: { selectedSchool, schoolYear, items, schoolImage  } });
+      }, 1000); // Simulate a short delay before navigating
     }
   };
 
@@ -246,7 +250,13 @@ export default function Start() {
     <div
       // style={{  backgroundImage: `url(${arkaplan})` }}
       className="relative flex flex-col items-center justify-center h-screen px-6 lg:px-20"
+      
     >
+      {isLoading && (
+        <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
+          <div className="w-16 h-16 border-8 border-blue-500 border-solid rounded-full loader border-t-transparent animate-spin"></div>
+        </div>
+      )}
       <form
         onSubmit={handleSubmit}
         className={`relative z-10 bg-white p-8 rounded-lg shadow-lg w-full max-w-md transform transition-all duration-700 ease-in-out ${

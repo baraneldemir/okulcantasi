@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import '../App.css'; 
+import useAnimateOnScroll from '../hooks/AnimateOnScroll';
 
 export default function Paket() {
   const location = useLocation();
   const navigate = useNavigate();
   const { selectedSchool, schoolYear, items, schoolImage } = location.state || {};
   
+  useAnimateOnScroll()
   // State to control the modal visibility
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -31,7 +34,7 @@ export default function Paket() {
       </h2>
       <div className="w-full max-w-4xl">
         {items && items.map((item, index) => (
-          <div key={index} className="p-4 mb-4 bg-white border border-gray-300 rounded-lg shadow-sm">
+          <div key={index} className="p-4 mb-4 bg-white border border-gray-300 rounded-lg shadow-sm notRightAnimated">
             <h3 className="text-xl font-semibold">{item.name}</h3>
             <p className="mt-2 text-gray-700">{item.description}</p>
           </div>
