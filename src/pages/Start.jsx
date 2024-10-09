@@ -257,7 +257,7 @@ export default function Start() {
   <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
     <div className="relative w-16 h-16 animate-rotate360">
       {/* Apple Body */}
-      <div className="w-16 h-18 bg-red-500 rounded-[50%_50%_40%_40%/55%_55%_45%_45%] relative border-4 border-red-600"></div>
+      <div className="relative w-16 h-16 bg-red-500 border-4 border-red-600 rounded-full"></div>
       {/* Apple Stem */}
       <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 -translate-y-3 rounded-t-full left-1/2 bg-brown-500"></div>
       {/* Apple Leaf */}
