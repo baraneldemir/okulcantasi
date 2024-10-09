@@ -8,17 +8,17 @@ export default function How() {
     //   style={{ backgroundImage: `url(${arkaplan})` }} 
       className="relative z-10 flex flex-col items-center px-6 pb-20 "
     >
-      <div className="flex flex-col items-center min-h-screen p-6 ">
+      <div className="flex flex-col items-center min-h-screen p-6 border-blue-800 ">
         <h1 className="mb-6 text-3xl text-white">Nasil Calisiyoruz</h1>
         <div className="relative">
           {/* Başlangıç */}
-          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 border-green-800 rounded-lg">
             <h2 className="font-semibold">1. Başlangıç</h2>
             <p className="text-sm">Ana sayfamıza giderek yolculuğunuza başlayın.</p>
           </div>
           
           {/* Seçim Sayfası */}
-          <div className="p-4 mb-4 text-center bg-white border-2 rounded-lg">
+          <div className="p-4 mb-4 text-center bg-white border-2 border-red-800 rounded-lg">
             <h2 className="font-semibold">2. Okul Seçimi</h2>
             <p className="text-sm">Mevcut paketleri görmek için okulunuzu seçin.</p>
           </div>
