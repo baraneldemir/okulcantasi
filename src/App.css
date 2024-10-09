@@ -100,3 +100,30 @@ body {
     
     overflow-x: hidden; /* Prevents horizontal scroll */
 }
+
+
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .loader {
+    animation: rotate360 1s linear infinite;
+  }
+  
+  .bg-brown-500 {
+    background-color: #8B4513;
+  }
+  
+  .bg-green-500 {
+    background-color: #32CD32;
+  }
+  
+  .animate-rotate360 {
+    animation: rotate360 2s linear infinite;
+  }
+  

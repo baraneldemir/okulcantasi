@@ -6,6 +6,7 @@ import arel from '../images/arel.png';
 import bahcesehir from '../images/bahcesehir.png';
 import sinav from '../images/sinav.png';
 import { useNavigate } from 'react-router-dom';
+import '../App.css'
 
 export default function Start() {
   const [isVisible, setIsVisible] = useState(false);
@@ -253,10 +254,20 @@ export default function Start() {
       
     >
       {isLoading && (
-        <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
-          <div className="w-16 h-16 border-8 border-blue-500 border-solid rounded-full loader border-t-transparent animate-spin"></div>
-        </div>
-      )}
+  <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
+    <div className="relative w-16 h-16">
+      {/* Apple Body */}
+      <div className="relative w-16 h-16 bg-red-500 border-4 border-red-600 rounded-full"></div>
+      {/* Apple Stem */}
+      <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 rounded-t-full left-1/2 bg-brown-500"></div>
+      {/* Apple Leaf */}
+      <div className="absolute top-0 w-3 h-3 transform rotate-45 bg-green-500 rounded-full left-2/3"></div>
+      {/* Rotation animation */}
+      <div className="absolute top-0 left-0 w-full h-full rounded-full animate-rotate360"></div>
+    </div>
+  </div>
+)}
+
       <form
         onSubmit={handleSubmit}
         className={`relative z-10 bg-white p-8 rounded-lg shadow-lg w-full max-w-md transform transition-all duration-700 ease-in-out ${
