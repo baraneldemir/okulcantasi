@@ -116,14 +116,15 @@ body {
   }
   
   .bg-brown-500 {
-    background-color: #8B4513;
+    background-color: #8B4513; /* Stem color */
   }
   
   .bg-green-500 {
-    background-color: #32CD32;
+    background-color: #32CD32; /* Leaf color */
   }
   
   .animate-rotate360 {
     animation: rotate360 2s linear infinite;
   }
+  
   

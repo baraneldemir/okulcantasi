@@ -255,18 +255,17 @@ export default function Start() {
     >
       {isLoading && (
   <div className="absolute inset-0 z-50 flex items-center justify-center bg-gray-100 bg-opacity-0">
-    <div className="relative w-16 h-16">
+    <div className="relative w-16 h-16 animate-rotate360">
       {/* Apple Body */}
-      <div className="relative w-16 h-16 bg-red-500 border-4 border-red-600 rounded-full"></div>
+      <div className="w-16 h-18 bg-red-500 rounded-[50%_50%_40%_40%/55%_55%_45%_45%] relative border-4 border-red-600"></div>
       {/* Apple Stem */}
-      <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 rounded-t-full left-1/2 bg-brown-500"></div>
+      <div className="absolute top-0 w-2 h-6 transform -translate-x-1/2 -translate-y-3 rounded-t-full left-1/2 bg-brown-500"></div>
       {/* Apple Leaf */}
-      <div className="absolute top-0 w-3 h-3 transform rotate-45 bg-green-500 rounded-full left-2/3"></div>
-      {/* Rotation animation */}
-      <div className="absolute top-0 left-0 w-full h-full rounded-full animate-rotate360"></div>
+      <div className="absolute top-0 left-2/3 transform -translate-x-1/2 -translate-y-3 w-4 h-8 bg-green-500 rounded-full rotate-[30deg]"></div>
     </div>
   </div>
 )}
+
 
       <form
         onSubmit={handleSubmit}
