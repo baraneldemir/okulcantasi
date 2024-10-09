@@ -91,7 +91,7 @@ export default function Paket() {
             <div className="flex mt-6 sm:mt-8 md:gap-6 lg:items-start xl:gap-8">
             <div className="flex-none w-full mx-auto lg:max-w-2xl xl:max-w-4xl">
             <div className="space-y-6">
-                <div className="relative h-32 p-2 bg-white border border-gray-200 rounded-lg shadow-sm dark:border-gray-700 dark:bg-gray-800 md:p-6">
+                <div className="relative h-32 p-2 bg-white border border-gray-200 rounded-lg shadow-sm md:p-6">
                 {/* <button // onClick={handleDelete}
                 className="absolute flex flex-row transition-all duration-1000 top-1 right-1 hover:underline"
               >
@@ -113,7 +113,7 @@ export default function Paket() {
               <div className="flex items-center justify-between h-full">
                 <img className="object-cover w-24 h-28" src={item.imgUrl} alt={item.name} />
                 <div className="flex-1 min-w-0 md:order-2 md:max-w-md">
-                  <p className="mt-1 ml-3 text-sm font-medium text-gray-900 dark:text-white">{item.name}</p>
+                  <p className="mt-1 ml-3 text-sm font-medium text-gray-900 ">{item.name}</p>
                   {/* <p className="ml-3 text-sm font-medium text-gray-900 dark:text-white"> Item Size: {size}</p> */}
                   {/* <div className="flex items-center mt-2">
                     <div className="flex items-center ml-2 space-x-2">
